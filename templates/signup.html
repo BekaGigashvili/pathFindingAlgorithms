@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'signup.css' %}">
 </head>
+
 <body>
     <div class="login-form">
         <div class="container">
@@ -18,11 +20,11 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repeat password" required>
                 {% if error_message %}
-                    <div class="error">
-                        <h2>
-                            {{ error_message }}
-                        </h2>
-                    </div>
+                <div class="error">
+                    <h2>
+                        {{ error_message }}
+                    </h2>
+                </div>
                 {% endif %}
                 <button type="submit" class="btn">Sign Up</button>
             </form>
@@ -30,4 +32,5 @@
         <a href="/login/">Log In</a>
     </div>
 </body>
+
 </html>
