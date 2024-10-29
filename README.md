@@ -7,8 +7,7 @@ inside terminal run "pip install -r requirements.txt", this will install all the
 
 for signup and log in you need to have a database, I use postgresql. If you want to use postgresql as well, you need to set up the postgresql database and user for that database and change the "NAME", "USER", and "PASSWORD" fields inside settings.py file accordingly, which is located inside the /app directory.
 
-after that you need to create superuser, which is admin, and run migrations. for that, simply run this commands in the terminal one by one:
-cd app
+after that you need to create superuser, which is admin, and run migrations. for that, simply run this command in the terminal:
 python manage.py createsuperuser
 
 after latter mentioned command, you will be required to set username, email and password for that superuser
