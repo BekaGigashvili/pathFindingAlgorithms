@@ -66,7 +66,7 @@ async function aStar() {
             }
         }
         function distance(currPos) {
-            return Math.abs(dstPos[0] - currPos[0]) + Math.abs(dstPos[1] - currPos[1]);
+            return Math.sqrt((dstPos[0] - currPos[0])**2 + (dstPos[1] - currPos[1])**2);
         }
         exploreNeighbor(e[0] - 1, e[1]); // left
         exploreNeighbor(e[0] + 1, e[1]); // right
